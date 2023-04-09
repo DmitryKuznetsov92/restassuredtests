@@ -150,6 +150,5 @@ class ReqresTest {
 
         val resourceYears = resourceList.data.map { it.year }
         Assertions.assertTrue(resourceYears.asSequence().zipWithNext { a, b -> a <= b }.all { it })
-        println("git test")
     }
 }
